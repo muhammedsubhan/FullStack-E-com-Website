@@ -4,8 +4,8 @@ import Link from "next/link";
 import React from "react";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
-import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import { usePathname } from "next/navigation";
+import MenuDrawer from "@/app/MUI/MenuDrawer";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -19,10 +19,9 @@ const Navbar = () => {
       <div className="border-b h-20 flex flex-col justify-center">
         <div className="flex items-center justify-around">
           <div className="hidden sm:flex">
-            <button>
-              <MenuOutlinedIcon sx={{ fontSize: 28 }} />
-            </button>
+            <MenuDrawer />
           </div>
+
           <div>
             <Link href="/">
               <h1 className="text-2xl font-bold">Exclusive</h1>
