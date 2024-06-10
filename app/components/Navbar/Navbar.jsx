@@ -23,7 +23,7 @@ const Navbar = () => {
           </div>
 
           <div>
-            <Link href="/">
+            <Link href="/shop">
               <h1 className="text-2xl font-bold">Exclusive</h1>
             </Link>
           </div>
@@ -31,12 +31,10 @@ const Navbar = () => {
             <ul className="flex items-center gap-16  text-black font-medium">
               <li>
                 <Link
-                  href="/"
-                  className={
-                    isActiveLink("/")
-                      ? "underline underline-offset-8 decoration-gray-500 decoration-2	"
-                      : ""
-                  }
+                  href="/shop"
+                  className={`underline-animation ${
+                    isActiveLink("/shop") ? "active-link" : ""
+                  }`}
                 >
                   Home
                 </Link>
@@ -44,11 +42,9 @@ const Navbar = () => {
               <li>
                 <Link
                   href="contact"
-                  className={
-                    isActiveLink("/contact")
-                      ? "underline underline-offset-8 decoration-gray-500 decoration-2	"
-                      : ""
-                  }
+                  className={`underline-animation ${
+                    isActiveLink("/contact") ? "active-link" : ""
+                  }`}
                 >
                   Contact
                 </Link>
@@ -56,11 +52,9 @@ const Navbar = () => {
               <li>
                 <Link
                   href="about"
-                  className={
-                    isActiveLink("/about")
-                      ? "underline underline-offset-8 decoration-gray-500 decoration-2	"
-                      : ""
-                  }
+                  className={`underline-animation ${
+                    isActiveLink("/about") ? "active-link" : ""
+                  }`}
                 >
                   About
                 </Link>
@@ -68,11 +62,9 @@ const Navbar = () => {
               <li>
                 <Link
                   href="signup"
-                  className={
-                    isActiveLink("/signup")
-                      ? "underline underline-offset-8 decoration-gray-500 decoration-2	"
-                      : ""
-                  }
+                  className={`underline-animation ${
+                    isActiveLink("/signup") ? "active-link" : ""
+                  }`}
                 >
                   Sign Up
                 </Link>

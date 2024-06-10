@@ -27,6 +27,15 @@ module.exports = {
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
       },
+      keyframes: {
+        underline: {
+          "0%": { width: "0%" },
+          "100%": { width: "100%" },
+        },
+      },
+      animation: {
+        underline: "underline 0.3s ease-in-out forwards",
+      },
     },
   },
   plugins: [],
