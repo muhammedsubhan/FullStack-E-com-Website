@@ -44,3 +44,11 @@
   height: 2px; /* Thickness of the underline */
   background-color: currentColor;
 }
+
+.slider-item {
+  padding: 0 10px; /* Adjust the padding value as needed */
+}
+
+/* .slick-list {
+  margin: 0 -10px; 
+} */

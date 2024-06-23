@@ -6,15 +6,15 @@ import VisibilityOutlinedIcon from "@mui/icons-material/VisibilityOutlined";
 const Card = () => {
   return (
     <>
-      <div>
-        <div className="flex flex-col gap-5 group ">
-          <div className="bg-gray-200 max-w-[290px] relative p-10 ">
+      <div className="flex items-center justify-center ">
+        <div className="flex flex-col gap-5 group  xs:w-full ">
+          <div className="bg-gray-200 max-w-[290px] xs:max-w-full relative p-10 xs:flex xs:items-center xs:justify-center">
             <Image
               src="/controller.png"
               height={200}
               width={200}
               alt="controller"
-              className="flex items-center justify-center "
+              className="flex items-center justify-center  "
             />
             <button className="bg-white absolute top-3 right-3 p-2 rounded-full">
               <FavoriteBorderIcon />

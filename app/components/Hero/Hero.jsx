@@ -42,13 +42,14 @@ const Hero = () => {
             </div>
           </ul>
         </div>
-        <div className="pt-5 px-20 w-[1380px] lg:w-full lg:px-5">
+        <div className="pt-5 px-20 w-full lg:w-full lg:px-5">
           <Carousel
             autoPlay
             interval={3000}
             infiniteLoop
             showArrows={false}
             showStatus={false}
+            showThumbs={false}
           >
             <div>
               <Image
@@ -57,6 +58,7 @@ const Hero = () => {
                 height={400}
                 width={600}
                 alt="banner"
+                priority
               />
             </div>
             <div>

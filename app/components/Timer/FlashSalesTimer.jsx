@@ -23,25 +23,25 @@ const FlashSalesTimer = ({ duration }) => {
 
     return (
       <div className="flex flex-col gap-2">
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-6 sm:gap-3">
           <div className="flex flex-col items-center">
             <p className="font-semibold text-xs">Days</p>
-            <p className="text-3xl font-bold">{days}</p>
+            <p className="text-3xl font-bold lg:text-2xl ">{days}</p>
           </div>
           <p className="text-2xl font-bold text-red-600">:</p>
           <div className="flex flex-col items-center">
             <p className="font-semibold text-xs">Hours</p>
-            <p className="text-3xl font-bold">{hours}</p>
+            <p className="text-3xl font-bold lg:text-2xl">{hours}</p>
           </div>
           <p className="text-2xl font-bold text-red-600">:</p>
           <div className="flex flex-col items-center">
             <p className="font-semibold  text-xs">Minutes</p>
-            <p className="text-3xl font-bold">{minutes}</p>
+            <p className="text-3xl font-bold lg:text-2xl">{minutes}</p>
           </div>
           <p className="text-2xl font-bold text-red-600">:</p>
           <div className="flex flex-col items-center">
             <p className="font-semibold  text-xs">Seconds</p>
-            <p className="text-3xl font-bold">{seconds}</p>
+            <p className="text-3xl font-bold lg:text-2xl">{seconds}</p>
           </div>
         </div>
       </div>
