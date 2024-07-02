@@ -42,7 +42,7 @@ const ThisMonth = () => {
             <Card />
           </div>
         </div>
-        <div className="mt-28 bg-black text-white flex items-center justify-between xl:gap-10 py-28 px-20 md:flex-col">
+        <div className="mt-28 bg-black text-white flex items-center justify-between xl:gap-10 py-28 px-20 md:flex-col lg:py-10 lg:px-10 md:items-start sm:px-4 sm:gap-16">
           <div className="flex flex-col gap-10">
             <div>
               <h1 className="text-xl font-medium text-green-400">Categories</h1>
@@ -62,13 +62,13 @@ const ThisMonth = () => {
               </button>
             </div>
           </div>
-          <div className="relative ">
+          <div className=" md:flex md:items-center md:justify-center  md:w-full">
             <Image
               src="/jbl.png"
               width={600}
               height={600}
               alt="jbl"
-              className="relative z-10 lg:w-[400px] "
+              className=" lg:w-[400px] sm:w-[230px]"
             />
           </div>
         </div>
