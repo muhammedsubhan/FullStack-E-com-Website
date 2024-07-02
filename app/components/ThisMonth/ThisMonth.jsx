@@ -1,5 +1,7 @@
 import React from "react";
 import Card from "../Card/Card";
+import FlashSalesTimer from "../Timer/FlashSalesTimer";
+import Image from "next/image";
 
 const ThisMonth = () => {
   return (
@@ -38,6 +40,36 @@ const ThisMonth = () => {
           </div>
           <div className="mt-10 sm:w-full">
             <Card />
+          </div>
+        </div>
+        <div className="mt-28 bg-black text-white flex items-center justify-between xl:gap-10 py-28 px-20 md:flex-col">
+          <div className="flex flex-col gap-10">
+            <div>
+              <h1 className="text-xl font-medium text-green-400">Categories</h1>
+            </div>
+            <div className="flex flex-col gap-2">
+              <p className="text-5xl font-semibold lg:text-2xl">Enhance Your</p>
+              <p className="text-5xl font-semibold lg:text-2xl">
+                Music Experience
+              </p>
+            </div>
+            <div>
+              <FlashSalesTimer duration={3 * 24 * 60 * 60 * 1000} />
+            </div>
+            <div>
+              <button className=" bg-green-500 text-sm  w-[150px] h-[50px] rounded-md text-white font-medium">
+                Buy Now!
+              </button>
+            </div>
+          </div>
+          <div className="relative ">
+            <Image
+              src="/jbl.png"
+              width={600}
+              height={600}
+              alt="jbl"
+              className="relative z-10 lg:w-[400px] "
+            />
           </div>
         </div>
       </div>
