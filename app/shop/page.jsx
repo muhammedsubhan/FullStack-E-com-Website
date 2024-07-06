@@ -4,6 +4,7 @@ import FlashSales from "../components/FlashSales/FlashSales";
 import Category from "../components/Category/Category";
 import ThisMonth from "../components/ThisMonth/ThisMonth";
 import OurProducts from "../components/OurProducts/OurProducts";
+import Service from "../components/Service/Service";
 
 const page = () => {
   return (
@@ -13,6 +14,7 @@ const page = () => {
       <Category />
       <ThisMonth />
       <OurProducts />
+      <Service />
     </div>
   );
 };
