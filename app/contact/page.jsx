@@ -17,7 +17,7 @@ const Contact = () => {
         </Breadcrumbs>
       </div>
       <div className="h-full pb-20 flex items-center flex-col justify-center    2xl:items-start 2xl:justify-start">
-        <div className="flex gap-10 2xl:flex-col 2xl:w-full 2xl:px-10">
+        <div className="flex gap-10 2xl:flex-col 2xl:w-full 2xl:px-10 sm:px-3">
           <div
             style={{
               boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
