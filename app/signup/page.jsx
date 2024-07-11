@@ -6,7 +6,7 @@ import React from "react";
 const SignUp = () => {
   return (
     <>
-      <div className="py-10 flex items-center justify-between lg:justify-center lg:gap-0 lg:pr-0 gap-16 pr-28 2xl:pr-10">
+      <div className=" h-full py-10 flex items-center justify-between lg:justify-center lg:gap-0 lg:pr-0 gap-16 pr-28 2xl:pr-10">
         <div className="lg:hidden flex">
           <Image
             src="/signup.png"
