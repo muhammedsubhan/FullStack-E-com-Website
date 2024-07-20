@@ -10,7 +10,7 @@ import Breadcrumbs from "@mui/material/Breadcrumbs";
 const About = () => {
   return (
     <>
-      <div className="py-10 px-56 md:px-10 ">
+      <div className="py-10 px-56 md:px-10 2xl:px-24">
         <Breadcrumbs aria-label="breadcrumb">
           <Link className="hover:underline " color="inherit" href="/shop">
             Home
@@ -19,8 +19,8 @@ const About = () => {
         </Breadcrumbs>
       </div>
       <div className="h-full ">
-        <div className="flex items-center justify-between">
-          <div className="flex flex-col gap-10 w-[640px] ml-60">
+        <div className="flex items-center justify-between 2xl:gap-20 xl:flex-col-reverse ">
+          <div className="flex flex-col gap-10 w-[640px] ml-60 2xl:ml-20 xl:w-full xl:ml-0 xl:px-5">
             <h1 className="text-5xl font-bold">Our Story</h1>
             <p className="text-xl ">
               Launced in 2015, Exclusive is South Asia’s premier online shopping
@@ -36,11 +36,17 @@ const About = () => {
               ranging from consumer.
             </p>
           </div>
-          <div>
-            <Image src="/story.png" alt="story" height={800} width={800} />
+          <div className="xl:w-full ">
+            <Image
+              src="/story.png"
+              alt="story"
+              height={800}
+              width={800}
+              className="2xl:w-[600px] xl:w-full "
+            />
           </div>
         </div>
-        <div className="py-40 flex items-center justify-center gap-5">
+        <div className="py-40 flex items-center justify-center gap-5 xl:flex-wrap">
           <div className=" border border-gray-300 w-[340px] h-[250px] flex flex-col items-center justify-center rounded-md hover:bg-red-500 transition-colors duration-300 group">
             <div className="flex flex-col items-center gap-10">
               <div className="p-3 bg-gray-300 rounded-full w-[100px] h-[100px] group-hover:bg-gray-200">
