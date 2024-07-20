@@ -6,6 +6,7 @@ import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
 import LocalAtmOutlinedIcon from "@mui/icons-material/LocalAtmOutlined";
 import Link from "next/link";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
+import Service from "../components/Service/Service";
 
 const About = () => {
   return (
@@ -114,6 +115,7 @@ const About = () => {
             </div>
           </div>
         </div>
+        <Service />
       </div>
     </>
   );

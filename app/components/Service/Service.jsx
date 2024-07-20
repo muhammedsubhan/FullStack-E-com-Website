@@ -53,7 +53,7 @@ const Service = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-end justify-end px-28">
+      <div className="flex items-end justify-end px-28 sm:px-10">
         <button className="p-4 rounded-full bg-gray-300 text-black shadow-2xl">
           <ArrowUpwardIcon fontSize="medium" />
         </button>
