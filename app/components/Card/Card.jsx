@@ -36,12 +36,12 @@ const Card = () => {
               <p className="font-medium text-red-500 ">$120</p>
               <del className="text-gray-400 font-medium">$160</del>
             </div>
-            <div className="flex gap-2 items-center">
-              <StarIcon sx={{ color: "#FFAD33" }} />
-              <StarIcon sx={{ color: "#FFAD33" }} />
-              <StarIcon sx={{ color: "#FFAD33" }} />
-              <StarIcon sx={{ color: "#FFAD33" }} />
-              <StarIcon sx={{ color: "#FFAD33" }} />
+            <div className="flex gap-2 items-center ">
+              <StarIcon sx={{ color: "#FFAD33" }} className=" sm:w-4 sm:h-4" />
+              <StarIcon sx={{ color: "#FFAD33" }} className=" sm:w-4 sm:h-4" />
+              <StarIcon sx={{ color: "#FFAD33" }} className=" sm:w-4 sm:h-4" />
+              <StarIcon sx={{ color: "#FFAD33" }} className=" sm:w-4 sm:h-4" />
+              <StarIcon sx={{ color: "#FFAD33" }} className=" sm:w-4 sm:h-4" />
               <p className="text-sm text-gray-400 font-medium">(88)</p>
             </div>
           </div>

@@ -2,18 +2,9 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
-import Button from "@mui/material/Button";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import ClearIcon from "@mui/icons-material/Clear";
 
-import List from "@mui/material/List";
-import Divider from "@mui/material/Divider";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -48,7 +39,7 @@ const MenuDrawer = () => {
               <ul className="flex items-center flex-col gap-10 text-black font-medium">
                 <li>
                   <Link
-                    href="/"
+                    href="/shop"
                     className={
                       isActiveLink("/")
                         ? "underline underline-offset-8 decoration-gray-500 decoration-2	"
@@ -60,7 +51,7 @@ const MenuDrawer = () => {
                 </li>
                 <li>
                   <Link
-                    href="contact"
+                    href="/contact"
                     className={
                       isActiveLink("/contact")
                         ? "underline underline-offset-8 decoration-gray-500 decoration-2	"
@@ -72,7 +63,7 @@ const MenuDrawer = () => {
                 </li>
                 <li>
                   <Link
-                    href="about"
+                    href="/about"
                     className={
                       isActiveLink("/about")
                         ? "underline underline-offset-8 decoration-gray-500 decoration-2	"
@@ -84,7 +75,7 @@ const MenuDrawer = () => {
                 </li>
                 <li>
                   <Link
-                    href="signup"
+                    href="/signup"
                     className={
                       isActiveLink("/signup")
                         ? "underline underline-offset-8 decoration-gray-500 decoration-2	"

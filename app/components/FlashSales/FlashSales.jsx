@@ -59,7 +59,7 @@ const FlashSales = () => {
       {
         breakpoint: 475, // xs
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
