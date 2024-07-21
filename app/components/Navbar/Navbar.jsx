@@ -75,9 +75,11 @@ const Navbar = () => {
             <div className="sm:hidden ">
               <InputTextField />
             </div>
-            <button>
-              <FavoriteBorderIcon />
-            </button>
+            <Link href="/wishlist">
+              <button>
+                <FavoriteBorderIcon />
+              </button>
+            </Link>
             <button>
               <ShoppingCartOutlinedIcon />
             </button>
