@@ -6,6 +6,8 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
+import Link from "next/link";
+import CartSubTotal from "./CartSubTotal";
 
 const DisplayTable = () => {
   function createData(name, calories, fat, carbs) {
@@ -20,7 +22,7 @@ const DisplayTable = () => {
   ];
   return (
     <>
-      <div className="border-2 border-green-600  px-10 sm:px-5">
+      <div className=" px-10 sm:px-5">
         <TableContainer component={Paper}>
           <Table sx={{ minWidth: 650 }} aria-label="simple table">
             <TableHead>
@@ -48,6 +50,16 @@ const DisplayTable = () => {
             </TableBody>
           </Table>
         </TableContainer>
+        <div className="mt-10 ">
+          <Link href="/shop">
+            <button className=" bg-white border transition-all delay-100 ease-in hover:bg-red-500 hover:text-white hover:border-none  w-[250px] h-[60px] sm:w-[170px] sm:text-sm rounded-md text-black font-medium">
+              Return To Shop
+            </button>
+          </Link>
+        </div>
+        <div>
+          <CartSubTotal />
+        </div>
       </div>
     </>
   );

@@ -11,7 +11,7 @@ const Cart = () => {
 
   return (
     <>
-      <div className="min-h-screen border-4 border-red-500">
+      <div className="min-h-screen">
         <div className="py-10 px-28 md:px-10">
           <Breadcrumbs aria-label="breadcrumb">
             <Link className="hover:underline" color="inherit" href="/shop">
