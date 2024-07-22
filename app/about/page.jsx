@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import StorefrontOutlinedIcon from "@mui/icons-material/StorefrontOutlined";
@@ -7,8 +8,11 @@ import LocalAtmOutlinedIcon from "@mui/icons-material/LocalAtmOutlined";
 import Link from "next/link";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Service from "../components/Service/Service";
+import { usePathname } from "next/navigation";
 
 const About = () => {
+  const pathname = usePathname();
+  const isAboutActive = pathname === "/about";
   return (
     <>
       <div className="py-10 px-56 md:px-10 2xl:px-24">
@@ -16,7 +20,7 @@ const About = () => {
           <Link className="hover:underline " color="inherit" href="/shop">
             Home
           </Link>
-          <p>About</p>
+          <p className={isAboutActive ? "font-medium text-black" : ""}>About</p>
         </Breadcrumbs>
       </div>
       <div className="h-full ">

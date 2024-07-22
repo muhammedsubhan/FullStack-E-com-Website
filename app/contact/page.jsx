@@ -1,11 +1,16 @@
+"use client";
 import React from "react";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import PhoneOutlinedIcon from "@mui/icons-material/PhoneOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import TextField from "@mui/material/TextField";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Contact = () => {
+  const pathname = usePathname();
+  const isContactActive = pathname === "/contact";
+
   return (
     <>
       <div className="py-10 px-28 md:px-10">
@@ -13,7 +18,9 @@ const Contact = () => {
           <Link className="hover:underline" color="inherit" href="/shop">
             Home
           </Link>
-          <p>Contact</p>
+          <p className={isContactActive ? "font-medium text-black" : ""}>
+            Contact
+          </p>
         </Breadcrumbs>
       </div>
       <div className="h-full pb-20 flex items-center flex-col justify-center    2xl:items-start 2xl:justify-start">

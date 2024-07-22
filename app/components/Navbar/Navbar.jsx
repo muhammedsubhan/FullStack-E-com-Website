@@ -80,9 +80,11 @@ const Navbar = () => {
                 <FavoriteBorderIcon />
               </button>
             </Link>
-            <button>
-              <ShoppingCartOutlinedIcon />
-            </button>
+            <Link href="/cart">
+              <button>
+                <ShoppingCartOutlinedIcon />
+              </button>
+            </Link>
           </div>
         </div>
       </div>
